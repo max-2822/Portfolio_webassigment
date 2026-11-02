@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashitosh Patil | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ashitosh Patil, Computer Science Engineering student.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Our CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Animated background blobs -->
+  <div class="bg-blobs"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Ashitosh<span>.dev</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" title="Toggle dark/light mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="icon-btn menu-toggle" id="menuToggle" title="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="hello">Welcome to my portfolio</p>
+        <h1>Hello, I'm <span class="gradient-text">Ashitosh Patil</span></h1>
+        <p class="subtitle">Computer Science Engineering Student | Aspiring Developer</p>
+        <div class="typing-line">I am a <span class="gradient-text" id="typing"></span><span class="cursor">&nbsp;</span></div>
+        <p class="intro">
+          I am a B.Tech Computer Science Engineering student at KLE Institute of Technology, Hubballi.
+          I enjoy learning programming, solving problems and building useful things with code.
+        </p>
+        <div class="btn-row">
+          <a href="resume.html" class="btn btn-primary"><i class="fa-solid fa-file-lines"></i> Explore My Resume</a>
+          <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Profile picture: put your photo at assets/images/profile.jpg -->
+      <div class="profile-wrap">
+        <div class="profile-ring">
+          <div class="profile-img">
+            <img src="assets/images/profile.jpg" alt="Ashitosh Patil" class="profile-photo">
+            <!-- If profile.jpg is missing, JS shows a user icon here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+      <p class="section-sub">Technologies I am learning and working with</p>
+      <div class="grid grid-4">
+        <div class="glass skill-card reveal">
+          <i class="fa-brands fa-python"></i>
+          <h3>Python</h3>
+          <div class="bar" style="--level:75%"><span></span></div>
+        </div>
+        <div class="glass skill-card reveal">
+          <i class="fa-brands fa-java"></i>
+          <h3>Java</h3>
+          <div class="bar" style="--level:65%"><span></span></div>
+        </div>
+        <div class="glass skill-card reveal">
+          <i class="fa-solid fa-code"></i>
+          <h3>C++</h3>
+          <div class="bar" style="--level:60%"><span></span></div>
+        </div>
+        <div class="glass skill-card reveal">
+          <i class="fa-brands fa-html5"></i>
+          <h3>Web Development</h3>
+          <div class="bar" style="--level:50%"><span></span></div>
+          <p class="small-text">Basic level</p>
+        </div>
+      </div>
+      <p class="small-text" style="text-align:center;margin-top:16px;">Bars are only a visual guide. Change the values in <code>style="--level:75%"</code> to match your own confidence.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/ashitosh-patil-00097331b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:patilashitosh29@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p>&copy; <span id="year"></span> Ashitosh Patil. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- jQuery first, then our script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

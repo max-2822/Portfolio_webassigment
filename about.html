@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Ashitosh Patil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-blobs"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Ashitosh<span>.dev</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" title="Toggle dark/light mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="icon-btn menu-toggle" id="menuToggle" title="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>About <span class="gradient-text">Me</span></h1>
+    </div>
+  </div>
+
+  <!-- Introduction -->
+  <section class="section">
+    <div class="container grid grid-2" style="align-items:center;">
+      <div class="profile-wrap reveal">
+        <div class="profile-ring">
+          <div class="profile-img"><img src="assets/images/profile.jpg" alt="Ashitosh Patil" class="profile-photo"></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <h2>Hi, I'm <span class="gradient-text">Ashitosh Patil</span></h2>
+        <p style="color:var(--muted);margin-top:12px;">
+          I am a Computer Science Engineering student at KLE Institute of Technology, Hubballi.
+          I like understanding how software works and I am building my programming skills step by step,
+          starting with Python, Java and C++, along with the basics of web development.
+        </p>
+        <p style="color:var(--muted);margin-top:12px;">
+          I believe in learning by practice, staying curious and working well with others.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">My <span class="gradient-text">Interests</span></h2>
+      <p class="section-sub">What excites me in technology</p>
+      <div class="grid grid-3">
+        <div class="glass interest-card reveal"><i class="fa-solid fa-laptop-code"></i><h3>Programming</h3><p class="small-text">Writing clean code in Python, Java and C++.</p></div>
+        <div class="glass interest-card reveal"><i class="fa-solid fa-puzzle-piece"></i><h3>Problem Solving</h3><p class="small-text">Breaking big problems into small, logical steps.</p></div>
+        <div class="glass interest-card reveal"><i class="fa-solid fa-globe"></i><h3>Web Development</h3><p class="small-text">Learning to design and build websites.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education timeline -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Educational <span class="gradient-text">Background</span></h2>
+      <p class="section-sub">My academic journey</p>
+      <div class="timeline">
+        <div class="timeline-item glass reveal">
+          <span class="year">Present</span>
+          <h3>B.Tech in Computer Science Engineering</h3>
+          <p>KLE Institute of Technology, Hubballi</p>
+        </div>
+        <div class="timeline-item glass reveal">
+          <span class="year">School Education</span>
+          <h3>KLE CBSE School, Nippani</h3>
+          <p>Percentage: 86%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career objective -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Career <span class="gradient-text">Objective</span></h2>
+      <div class="glass objective reveal" style="margin-top:30px;">
+        "To continuously improve my technical knowledge, develop practical programming skills, and build innovative solutions while growing as a computer science professional."
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/ashitosh-patil-00097331b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:patilashitosh29@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p>&copy; <span id="year"></span> Ashitosh Patil. All rights reserved.</p>
+    </div>
+  </footer>
+  <button id="backToTop" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
